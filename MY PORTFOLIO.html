@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-algerian: 'Segoe UI', sans-serif;
+      color: #fff;
+      height: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* Video Background */
+    #video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00ffc3;
+    }
+
+    a {
+      color: #00ffc3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffc3;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.85);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 15px 0;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00ffc3;
+    }
+
+    .card-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      gap: 15px;
+    }
+
+    .skills-list li {
+      background: #333;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    #hobbies ul {
+      list-style-type: square;
+      padding-left: 20px;
+      font-size: 1rem;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 15px;
+      font-size: 1.8rem;
+      color: #00ffc3;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ffffff;
+      transform: scale(1.2);
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔥 Video Background -->
+  <video autoplay muted loop id="video-bg">
+    <source src="https://media.istockphoto.com/id/2160413002/video/filing-documents-computer-file-digitization-file-folder-document-data-technology-sharing.mp4?s=mp4-640x640-is&k=20&c=treuUUnyY8hIjsJwAXXD55HvUmO-oBiycYtoAZTQw0U=" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="overlay">
+      <h1>Welcome to My Portfolio</h1>
+      <p>FULL STACK DEVELOPER</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile -->
+  <section id="profile">
+    <h2>Profile</h2>
+
+    <p>Hello! A Bachelor of Computer Applications graduate student at Hindustan Institute of Technology and Science, with a CGPA of 7.50 and actively seeking an entry-level opportunity to contribute to organizational objectives while gaining practical experience and enhancing my technical skills in a professional environment.</p>
+  </section>
+<!-- Education -->
+  <section id="education">
+    <h2>EDUCATION</h2>
+    <div class="card-list">
+      <div class="card">
+        <h3>Bachelor of Computer Application (BCA)</h3>
+       <h3 style="color: red; text-align: center;"><u>AT COLLEGE</u></h3>
+        <p>HINDUSTAN INSTITUTE OF TECHNOLOGY AND SCIENCE, (2022 – 2025)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>UI and UX Designing</li>
+      <li>Angular JS</li>
+      <li>Figma</li>
+    </ul>
+  </section>
+<!-- Projects -->
+<section id="projects">
+  <h2>PROJECTS</h2>
+  <div class="card-list">
+    <div class="card">
+      <h2>Portfolio Website</h2>
+      <p>Responsive personal portfolio using HTML, CSS, JS</p>
+    </div>
+    <div class="card-list">
+    <div class="card">
+      <h2>Stock Market Tracker</h2>
+      <p>Web app that tracks real-time stock data using financial APIs.</p>
+      <p><a href="https://github.com/yourusername/stock-market-tracker" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+</section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <h2>RESUME/CV</h2>
+    <p>You can download my resume below:</p>
+    <a href="assets/resume.pdf" target="_blank" download>Download Resume (PDF)</a>
+  </section>
+
+  <!-- Hobbies -->
+<section id="hobbies">
+  <h2>HOBBIES</h2>
+  <ul style="list-style: none; padding: 0; text-align: center;">
+    <li>📸 Photography & Editing</li>
+    <li>📚 Reading Books</li>
+    <li>🎮 Gaming & Anime</li>
+  </ul>
+</section>
+
+ <!-- Certifications -->
+<section id="certifications">
+  <h2>CERTIFICATIONS</h2>
+  <div class="card-list">
+    <div class="card">
+      <h3><a href="https://www.coursera.org/your-fullstack-cert" target="_blank">Full Stack Development</a></h3>
+      <p>Completed – (2024)</p>
+      <li> Via NOVITECH </li>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://www.coursera.org/your-ml-cert" target="_blank">Machine Learning</a></h3>
+      <p>Completed via Coursera – 2024</p>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://www.udemy.com/your-uiux-cert" target="_blank">UI/UX Design</a></h3>
+      <p>Completed via Udemy – Figma, Adobe XD</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>CONTACT</h2>
+    <p>Feel free to reach out via email or connect with me on social platforms:</p>
+    <ul>
+      <li>Email: <a href="mailto:lokeshelumalai.sbscvv@gmail.com">lokeshelumalai.sbscvv@gmail.com</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.naukri.com" target="_blank" title="Naukri"><i class="fas fa-briefcase"></i></a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
